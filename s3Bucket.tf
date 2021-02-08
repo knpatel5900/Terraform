@@ -1,6 +1,9 @@
-Resource "aws_s3_bucket" "example2" {
-  bucket = "kp-bucket2"
+resource "aws_s3_bucket" "kp-8657" {
+  bucket = "kp-8657"
   acl    = "private"
+
   tags = {
-    Name = "kpbucket2"
+    Name        = "kp-8657"
+    Environment = "Dev"
   }
+}
