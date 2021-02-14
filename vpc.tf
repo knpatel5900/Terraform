@@ -7,7 +7,7 @@ resource "aws_vpc" "Terraform_VPC" {
   }
 }
 
-}
+
 
 output "Name" {
   value = aws_vpc.Terraform_VPC.tags
