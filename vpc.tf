@@ -46,6 +46,24 @@ output "cidr" {
   description = "This is CIDR_Block"
 }
 
+output "public_subnet_name" {
+  value = aws_subnet.public_subnet.tags
+  description = "This is Public_Subnet"
+}
+output "public_subnet_AZ" {
+  value = aws_subnet.public_subnet.availability_zone
+  description = "This is AZ"
+}
+
+output "private_subnet_name" {
+  value = aws_subnet.private_subnet.tags
+  description = "This is Public_Subnet"
+}
+output "private_subnet_AZ" {
+  value = aws_subnet.private_subnet.availability_zone
+  description = "This is AZ"
+}
+
 
 
 
