@@ -18,6 +18,9 @@ variable "subnetCIDRblock_public" {
 variable "subnetCIDRblock_remote" {
   default =  "192.168.3.0/24"
 }
+variable "subnetCIDRblock_kp" {
+  default =  "192.168.4.0/24"
+}
 variable "mapPublicIP" {
   default = true
 }
