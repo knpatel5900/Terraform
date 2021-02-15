@@ -15,9 +15,12 @@ variable "subnetCIDRblock_private" {
 variable "subnetCIDRblock_public" {
   default =  "192.168.1.0/24"
 }
+variable "subnetCIDRblock_remote" {
+  default =  "192.168.3.0/24"
+}
 variable "mapPublicIP" {
   default = true
 }
 variable "availabilityZone" {
-  default = "us-east-1a"
+  default = "us-east-1b"
 }
