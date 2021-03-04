@@ -16,3 +16,11 @@ resource "aws_subnet" "private_subnet" {
   cidr_block = var.private_subnet
 
 }
+
+resource "aws_internet_gateway" "kgw" {
+  vpc_id = aws_vpc.myvpc.id
+
+  tags = {
+    Name = "kgw"
+  }
+}
